@@ -47,7 +47,9 @@ edit autoexec.bat
     ## Meta
 
     Seu nome - [@SeuTwitter](http://thitter.com/seuTwitter) - seu email@gmail.com
+
     Distribuído sobre a licença. Veja `LICENÇA` para mais informações.
+    
     [https://github.com/seuusario/seuprojeto](https://github.com/seuusuario)
 
 

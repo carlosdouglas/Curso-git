@@ -1,0 +1,83 @@
+1º Git init
+
+configurar o arquivo config do git com o nome e o email
+2º git config user.name "teste"
+3ª git config user.email "carlosdouglas100@gmail.com"
+
+para uma configuração global que fica para todos os projetos é só adicionar --global na frente de user tanto para o nome como para o email.
+ex: git config --global user.name "teste"
+
+4ª git add para adicionar um arquivo no repositório. 
+
+5º git commit -m "Descrição do código"
+
+6ª git add .   (com o ponto depois do add, ele adciona todos os arquivos de uma vez )
+
+7ª git log para mostras os comits. 
+
+Aula 13. Para voltar a um estado anterior git restore --staged nomedoArquivo
+
+============================================================================================
+
+Seção 4 - Git intermediário 24/03/21
+
+Branch.
+
+Para iniciar o uso do git a primeira coisa a fazer é usar o comando:
+git init para iniciar um novo repositorio
+
+configurar o nome e email da pessoa que está criando o repositório:
+git config user.name "Nome da Pessoa"
+git config user.mail "Email da pessoa"
+
+Para criar uma branch:
+git branch nome da branch.
+
+para alterar o trabalho para uma nova brench retirando da branch master.
+git checkout nome da branch.
+Obs: observar no terminal onde em qual nome da branch o asterisco está, pois ele que mostra qual branch está sendo usada
+
+para deletar uma branch:
+git branch -D nome da branch
+
+para criar uma branch já ativada como principal:
+git checkout -b nome da nova brench
+
+----Aula 29 Trabalhando com Merge----
+
+para juntar as branch:
+git merge nome da branch
+
+----Aula 31 Trabalhando com Clone e Push ------
+Após clonar um novo repositório, no novo repositório é necessário criar um novo usuário e email igual ao primeiro passo:
+
+2º git config user.name "teste"
+3ª git config user.email "carlosdouglas100@gmail.com"
+
+--------Aula 32 Trabalhando com Bare Repository---------
+
+O Bare é um repositorio administrador dos outros repositorios dos usuários possibilitando realizar o pull e outros comandos.
+
+--------------------Aula 38 Criando um repositório no git--------------
+
+Verificar se tem algum repositório remoto:
+git remote -v 
+
+Para enviar um novo arquivo para o repositório do gitHub:
+git push -u origin master     (Origin é por que é do repositório de origem. E master é para a branch master do github).
+
+-------------------Aula 42 Desfazendo checkouts-------------------------
+
+Caso tenha feito alguma alteração no código e queira voltar a vesção anterior:
+git checkout -- .
+
+Para retornar apenas o arquivo que foi alterado:
+git checkout -- nomeDoArquivo
+
+Para retornar depois que add os arquivos:
+git checkout HEAD -- .      (O ponto no final significa todos. Pode ser alterado para o nome do arquivo).
+
+aos 5:37 
+
+
+
